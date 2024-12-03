@@ -1,0 +1,6 @@
+Function  CPU Time  CPU Time:Effective Time  CPU Time:Spin Time  CPU Time:Overhead Time  Module  Function (Full)                      Source File  Start Address
+--------  --------  -----------------------  ------------------  ----------------------  ------  -----------------------------------  -----------  -------------
+dotprod     0.560s                   0.560s                  0s                      0s  cproj   dotprod(int*, int*, int)             [Unknown]    0x401176     
+matmult     0.370s                   0.370s                  0s                      0s  cproj   matmult(int*, int*, int*, int, int)  [Unknown]    0x4011ef     
+stencil     0.023s                   0.023s                  0s                      0s  cproj   stencil(int*, int*, int, int)        [Unknown]    0x40141e     
+main        0.003s                   0.003s                  0s                      0s  cproj   main                                 [Unknown]    0x4015b2     

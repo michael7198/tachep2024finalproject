@@ -1,0 +1,97 @@
+Processing [report1.sqlite] with [/opt/nvidia/hpc_sdk/Linux_x86_64/24.9/profilers/Nsight_Systems/host-linux-x64/reports/nvtx_sum.py]... 
+SKIPPED: report1.sqlite does not contain NV Tools Extension (NVTX) data.
+
+Processing [report1.sqlite] with [/opt/nvidia/hpc_sdk/Linux_x86_64/24.9/profilers/Nsight_Systems/host-linux-x64/reports/osrt_sum.py]... 
+Time (%),Total Time (ns),Num Calls,Avg (ns),Med (ns),Min (ns),Max (ns),StdDev (ns),Name
+78.6,1122669482,41,27382182.5,10079058.0,3040,606975635,94063678.4,poll
+20.1,287565725,663,433734.1,33251.0,1180,46665280,2043487.5,ioctl
+0.6,8725987,29,300896.1,29421.0,18890,6516248,1199846.2,mmap64
+0.2,3498457,45,77743.5,11350.0,4620,1693299,287704.9,fopen
+0.1,945821,33,28661.2,1230.0,1010,453731,105770.0,fcntl
+0.1,928510,10,92851.0,94917.0,51071,127983,28765.7,sem_timedwait
+0.1,776188,54,14373.9,11865.5,4830,38531,7651.0,open64
+0.1,756266,2,378133.0,378133.0,345937,410329,45532.0,pthread_create
+0.0,676185,15,45079.0,14130.0,5860,381269,94260.0,mmap
+0.0,637633,6,106272.2,96927.0,5370,241975,103572.9,fread
+0.0,284857,41,6947.7,4090.0,2180,98233,14838.1,fclose
+0.0,188824,4,47206.0,15230.5,13360,145003,65214.9,fgets
+0.0,104762,1,104762.0,104762.0,104762,104762,0.0,pthread_cond_wait
+0.0,78632,12,6552.7,6040.0,1750,12950,3182.9,write
+0.0,70212,6,11702.0,11085.5,6540,17100,4446.8,open
+0.0,59700,3,19900.0,20180.0,14160,25360,5605.2,munmap
+0.0,50311,3,16770.3,19201.0,9690,21420,6231.3,pipe2
+0.0,42910,15,2860.7,2710.0,1570,5950,1285.9,read
+0.0,32742,2,16371.0,16371.0,15921,16821,636.4,socket
+0.0,19970,3,6656.7,6280.0,6050,7640,859.3,fopen64
+0.0,18130,1,18130.0,18130.0,18130,18130,0.0,connect
+0.0,9940,2,4970.0,4970.0,3670,6270,1838.5,pthread_cond_broadcast
+0.0,6690,2,3345.0,3345.0,2540,4150,1138.4,fwrite
+0.0,2600,1,2600.0,2600.0,2600,2600,0.0,bind
+0.0,2080,2,1040.0,1040.0,1000,1080,56.6,dup
+0.0,1600,1,1600.0,1600.0,1600,1600,0.0,listen
+
+Processing [report1.sqlite] with [/opt/nvidia/hpc_sdk/Linux_x86_64/24.9/profilers/Nsight_Systems/host-linux-x64/reports/cuda_api_sum.py]... 
+Time (%),Total Time (ns),Num Calls,Avg (ns),Med (ns),Min (ns),Max (ns),StdDev (ns),Name
+92.5,276439258,5,55287851.6,204914.0,5261,276000918,123382398.9,cudaMalloc
+5.6,16743910,5,3348782.0,1382162.0,153274,13637329,5784824.5,cudaMemcpy
+1.6,4794488,3,1598162.7,36720.0,9131,4748637,2728425.7,cudaLaunchKernel
+0.3,769888,5,153977.6,163934.0,9700,393689,153566.3,cudaFree
+0.0,1770,1,1770.0,1770.0,1770,1770,0.0,cuModuleGetLoadingMode
+
+Processing [report1.sqlite] with [/opt/nvidia/hpc_sdk/Linux_x86_64/24.9/profilers/Nsight_Systems/host-linux-x64/reports/cuda_gpu_kern_sum.py]... 
+Time (%),Total Time (ns),Instances,Avg (ns),Med (ns),Min (ns),Max (ns),StdDev (ns),Name
+98.3,12037132,1,12037132.0,12037132.0,12037132,12037132,0.0,"matrix_mul_gpu(const int *, const int *, int *, int)"
+1.7,209533,2,104766.5,104766.5,104095,105438,949.6,"stencil_2d(int *, int *, int)"
+
+Processing [report1.sqlite] with [/opt/nvidia/hpc_sdk/Linux_x86_64/24.9/profilers/Nsight_Systems/host-linux-x64/reports/cuda_gpu_mem_time_sum.py]... 
+Time (%),Total Time (ns),Count,Avg (ns),Med (ns),Min (ns),Max (ns),StdDev (ns),Operation
+59.4,239420,3,79806.7,79455.0,78719,81246,1299.7,[CUDA memcpy Device-to-Host]
+40.6,163838,2,81919.0,81919.0,81887,81951,45.3,[CUDA memcpy Host-to-Device]
+
+Processing [report1.sqlite] with [/opt/nvidia/hpc_sdk/Linux_x86_64/24.9/profilers/Nsight_Systems/host-linux-x64/reports/cuda_gpu_mem_size_sum.py]... 
+Total (MB),Count,Avg (MB),Med (MB),Min (MB),Max (MB),StdDev (MB),Operation
+3.146,3,1.049,1.049,1.049,1.049,0.000,[CUDA memcpy Device-to-Host]
+2.097,2,1.049,1.049,1.049,1.049,0.000,[CUDA memcpy Host-to-Device]
+
+Processing [report1.sqlite] with [/opt/nvidia/hpc_sdk/Linux_x86_64/24.9/profilers/Nsight_Systems/host-linux-x64/reports/openmp_sum.py]... 
+SKIPPED: report1.sqlite does not contain OpenMP event data.
+
+Processing [report1.sqlite] with [/opt/nvidia/hpc_sdk/Linux_x86_64/24.9/profilers/Nsight_Systems/host-linux-x64/reports/opengl_khr_range_sum.py]... 
+SKIPPED: report1.sqlite does not contain KHR Extension (KHR_DEBUG) data.
+
+Processing [report1.sqlite] with [/opt/nvidia/hpc_sdk/Linux_x86_64/24.9/profilers/Nsight_Systems/host-linux-x64/reports/opengl_khr_gpu_range_sum.py]... 
+SKIPPED: report1.sqlite does not contain GPU KHR Extension (KHR_DEBUG) data.
+
+Processing [report1.sqlite] with [/opt/nvidia/hpc_sdk/Linux_x86_64/24.9/profilers/Nsight_Systems/host-linux-x64/reports/vulkan_marker_sum.py]... 
+SKIPPED: report1.sqlite does not contain Vulkan Debug Extension (Vulkan Debug Util) data.
+
+Processing [report1.sqlite] with [/opt/nvidia/hpc_sdk/Linux_x86_64/24.9/profilers/Nsight_Systems/host-linux-x64/reports/vulkan_gpu_marker_sum.py]... 
+SKIPPED: report1.sqlite does not contain GPU Vulkan Debug Extension (GPU Vulkan Debug markers) data.
+
+Processing [report1.sqlite] with [/opt/nvidia/hpc_sdk/Linux_x86_64/24.9/profilers/Nsight_Systems/host-linux-x64/reports/dx11_pix_sum.py]... 
+SKIPPED: report1.sqlite does not contain DX11 CPU debug markers.
+
+Processing [report1.sqlite] with [/opt/nvidia/hpc_sdk/Linux_x86_64/24.9/profilers/Nsight_Systems/host-linux-x64/reports/dx12_gpu_marker_sum.py]... 
+SKIPPED: report1.sqlite does not contain DX12 GPU debug markers.
+
+Processing [report1.sqlite] with [/opt/nvidia/hpc_sdk/Linux_x86_64/24.9/profilers/Nsight_Systems/host-linux-x64/reports/dx12_pix_sum.py]... 
+SKIPPED: report1.sqlite does not contain DX12 CPU debug markers.
+
+Processing [report1.sqlite] with [/opt/nvidia/hpc_sdk/Linux_x86_64/24.9/profilers/Nsight_Systems/host-linux-x64/reports/wddm_queue_sum.py]... 
+SKIPPED: report1.sqlite does not contain WDDM context data.
+
+Processing [report1.sqlite] with [/opt/nvidia/hpc_sdk/Linux_x86_64/24.9/profilers/Nsight_Systems/host-linux-x64/reports/um_sum.py]... 
+SKIPPED: report1.sqlite does not contain CUDA Unified Memory CPU page faults data.
+
+Processing [report1.sqlite] with [/opt/nvidia/hpc_sdk/Linux_x86_64/24.9/profilers/Nsight_Systems/host-linux-x64/reports/um_total_sum.py]... 
+SKIPPED: report1.sqlite does not contain CUDA Unified Memory CPU page faults data.
+
+Processing [report1.sqlite] with [/opt/nvidia/hpc_sdk/Linux_x86_64/24.9/profilers/Nsight_Systems/host-linux-x64/reports/um_cpu_page_faults_sum.py]... 
+SKIPPED: report1.sqlite does not contain CUDA Unified Memory CPU page faults data.
+
+Processing [report1.sqlite] with [/opt/nvidia/hpc_sdk/Linux_x86_64/24.9/profilers/Nsight_Systems/host-linux-x64/reports/openacc_sum.py]... 
+SKIPPED: report1.sqlite does not contain OpenACC event data.
+
+Processing [report1.sqlite] with [/opt/nvidia/hpc_sdk/Linux_x86_64/24.9/profilers/Nsight_Systems/host-linux-x64/reports/syscall_sum.py]... 
+SKIPPED: report1.sqlite does not contain syscall data.
+
